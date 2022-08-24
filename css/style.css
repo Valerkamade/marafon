@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --basic: #533738;
+  --basic-white: #ffffff;
+  --accent-dark: #8D7370;
+  --button: #CC8B86;
+  --arrow: #F5F2ED;
+  --white: #F6EDE9;
+  --hover: rgb(100, 72, 69, 0.8);
+  --accent-light: #E2C4BA;
+  --bg: #EFE6E4;
+  --white-60: rgba(255, 255, 255, 0.6);
+}
+
+.page-body {
+  min-width: 1440px;
+  min-height: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--basic);
+  background-color: var(--bg);
+}
+
+/* Hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+
+.link-logo {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.site-navigation a {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic);
+  text-decoration: none;
+}
+
+.contact-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic);
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+/* Bunner */
+
+.bunner {
+  background-image: url("../img/dicoration/bunner.jpg");
+  background-repeat: no-repeat;
+}
+
+.title-bunner {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--basic);
+  text-decoration: none;
+  background-color: var(--button);
+}
+
+/* About us */
+
+.desc {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.desc::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/dicoration/serv.jpg");
+  left: 5px;
+  top: 5px;
+  padding: 25px;
+}
+
+.stat-dt {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.stat-dd {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+/* Portfolio */
+
+.desc-hover {
+  color: var(--basic-white);
+  background-color: var(--hover);
+}
+
+.desc-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.more {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-decoration: none;
+  color: var(--basic);
+}
+
+/* Team */
+
+.wrap-team {
+  background-color: var(--accent-light);
+}
+
+/* Procedure */
+
+/* Reviews */
+
+.reviews cite {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/* Request */
+
+.wrap {
+  background-color: var(--accent-dark);
+  color: var(--basic-white);
+}
+
+.request p {
+  color: var(--white-60);
+}

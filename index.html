@@ -2,199 +2,217 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCANDI</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCANDI</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <a>
-            <img src="../img/logo.png" alt="Логотип SCANDI" class="logo" width="25" height="25">
-            SCANDI
-        </a>
+<body class="page-body">
+  <header>
+    <a class="link-logo">
+      <img class="logo" src="../img/logo.png" alt="Логотип SCANDI" width="25" height="25">
+      Scandi
+    </a>
 
-        <nav class="navigation">
-            <ul>
-                <li><a href="#about-us">О компании</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#team">Команда</a></li>
-                <li><a href="#procedure">Как мы работаем</a></li>
-                <li><a href="#reviews">Отзывы клиентов</a></li>
-                <li><a href="#submitt">Оставить заявку</a></li>
-            </ul>
-        </nav>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="#about-us">О компании</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#procedure">Как мы работаем</a></li>
+        <li><a href="#reviews">Отзывы клиентов</a></li>
+        <li><a href="#request">Оставить заявку</a></li>
+      </ul>
+    </nav>
 
-        <a href="tel:+79818574684">+7 (981) 857-46-24</a>
-    </header>
+    <a class="contact-phone" href="tel:+79818574684">+7 (981) 857-46-24</a>
+  </header>
 
-    <main>
-        <h1>Дизайн студия SCANDI</h1>
+  <main>
+    <h1 class="visually-hidden">Дизайн студия SCANDI</h1>
 
-        <section>
-            <h2>Поможем сделать вашу квартиру уютнее</h2>
+    <section class="bunner">
+      <h2 class="title title-bunner">Поможем сделать вашу квартиру уютнее</h2>
 
-            <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать
-                доставку</p>
+      <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать
+        доставку</p>
 
-            <a href="">Оставить заявку</a>
-        </section>
+      <a class="btn" href="#request">Оставить заявку</a>
+    </section>
 
-        <section id="about-us">
-            <h2>О нас</h2>
+    <section class="about-us" id="about-us">
+      <h2 class="title">О нас</h2>
 
-            <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать
-                неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что
-                по-настоящему вдохновляет дизайнеров нашей студии.</p>
-            <p>Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: <q>Да! Это именно
-                    то, что действительно достойно моего дома!</q></p>
+      <div class="desc">
+        <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать
+          неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что
+          по-настоящему вдохновляет дизайнеров нашей студии.</p>
+        <p>Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: <q>Да! Это именно
+            то, что действительно достойно моего дома!</q></p>
+      </div>
+    </section>
 
-            <dl>
-                <dt>5</dt>
-                <dd>лет опыта</dd>
-                <dt>100</dt>
-                <dd>проектов</dd>
-                <dt>10</dt>
-                <dd>наград</dd>
-            </dl>
-        </section>
+    <div class="wrap">
+      <section class="stat">
+      <dl>
+        <dt class="stat-dt">5</dt>
+        <dd class="stat-dd">лет опыта</dd>
+        <dt class="stat-dt">100</dt>
+        <dd class="stat-dd">проектов</dd>
+        <dt class="stat-dt">10</dt>
+        <dd class="stat-dd">наград</dd>
+      </dl>
+      </section>
+    </div>
 
-        <section id="portfolio">
-            <h2>Наши работы</h2>
+    <section id="portfolio">
+      <h2 class="title">Наши работы</h2>
 
-            <ul>
-                <li>
-                    <h3>Квартира-студия 30 кв.м.</h3>
-                    <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и
-                        сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
-                    <img src="/img/content/studio.jpg" alt="" width="488" height="451">
-                </li>
+      <ul class="portfolio-list">
+        <li>
+          <div class="desc-hover">
+            <h3 class="desc-title">Квартира-студия 30 кв.м.</h3>
+            <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и
+              сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+          </div>
+          <img src="/img/content/studio.jpg" alt="" width="488" height="451">
+        </li>
 
-                <li>
-                    <h3>Кухня в двух этажном доме</h3>
-                    <p></p>
-                    <img src="/img/content/hause.jpg" alt="" width="692" height="451">
-                </li>
+        <li>
+          <div class="desc-hover">
+            <h3 class="desc-title">Кухня в двух этажном доме</h3>
+            <p></p>
+          </div>
+          <img src="/img/content/hause.jpg" alt="" width="692" height="451">
+        </li>
 
-                <li>
-                    <h3>Гостинная</h3>
-                    <p></p>
-                    <img src="/img/content/room.jpg" alt="" width="692" height="451">
-                </li>
+        <li>
+          <div class="desc-hover">
+            <h3 class="desc-title">Гостинная</h3>
+            <p></p>
+          </div>
+          <img src="/img/content/room.jpg" alt="" width="692" height="451">
+        </li>
 
-                <li>
-                    <h3>Ванная комната</h3>
-                    <p></p>
-                    <img src="/img/content/bathroom.jpg" alt="" width="488" height="451">
-                </li>
-            </ul>
+        <li>
+          <div class="desc-hover">
+            <h3 class="desc-title">Ванная комната</h3>
+            <p></p>
+          </div>
+          <img src="/img/content/bathroom.jpg" alt="" width="488" height="451">
+        </li>
+      </ul>
 
-            <a href="#">Смотри ещё</a>
-        </section>
+      <a class="more" href="#">Смотри ещё</a>
+    </section>
 
-        <section id="team">
-            <h2>Команда</h2>
-            <ul>
-                <li>
-                    <img src="/img/team/masha.jpg" alt="">
-                    <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и
-                        помогает сделать вашу квартиру красивой и уютной.</p>
-                </li>
+    <div class="wrap-team">
+      <section class="team" id="team">
+        <h2 class="title">Команда</h2>
+        <ul>
+          <li>
+            <img src="/img/team/masha.jpg" alt="">
+            <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и
+              помогает сделать вашу квартиру красивой и уютной.</p>
+          </li>
 
-                <li>
-                    <img src="/img/team/sasha.jpg" alt="">
-                    <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все
-                        документы и ответит на все вопросы.</p>
-                </li>
+          <li>
+            <img src="/img/team/sasha.jpg" alt="">
+            <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все
+              документы и ответит на все вопросы.</p>
+          </li>
 
-                <li>
-                    <img src="/img/team/kate.jpg" alt="">
-                    <p>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как
-                        обустроить дом так, чтобы вам понравилось.</p>
-                </li>
-            </ul>
-        </section>
+          <li>
+            <img src="/img/team/kate.jpg" alt="">
+            <p>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как
+              обустроить дом так, чтобы вам понравилось.</p>
+          </li>
+        </ul>
+      </section>
 
-        <section id="#procedure">
-            <h2>Как мы работаем</h2>
+      <section class="procedure" id="procedure">
+        <h2 class="title">Как мы работаем</h2>
 
-            <ol>
-                <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
-                <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
-                <li>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
-                <li>Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
-            </ol>
-        </section>
+        <ol>
+          <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
+          <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
+          <li>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
+          <li>Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+        </ol>
+      </section>
+    </div>
 
-        <article id="#reviews">
-            <h2>Отзывы</h2>
+    <article class="reviews" id="reviews">
+      <h2 class="title">Отзывы</h2>
 
-            <ul>
-                <li>
-                    <blockquote>
+      <ul>
+        <li>
+          <blockquote>
 
-                    </blockquote>
-                    <img alt="">
-                    <img alt="">
-                </li>
+          </blockquote>
+          <img alt="">
+          <img alt="">
+        </li>
 
-                <li>
-                    <blockquote>
-                        <p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения
-                            своего дома</p>
-                        <p>Работа шла быстро, было очень приятно общаться и взаимодействовать с сотрудниками. Не
-                            ожидала, что это будет так легко!</p>
-                        <p>Буду советовать и своим друзьям к вам обращаться!</p>
-                        <cite>Анна Беловская</cite>
-                    </blockquote>
+        <li>
+          <blockquote>
+            <p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения
+              своего дома</p>
+            <p>Работа шла быстро, было очень приятно общаться и взаимодействовать с сотрудниками. Не
+              ожидала, что это будет так легко!</p>
+            <p>Буду советовать и своим друзьям к вам обращаться!</p>
+            <cite>Анна Беловская</cite>
+          </blockquote>
 
-                    <ul>
-                        <li>
-                            <img src="/img/content/living_room-review.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="/img/content/kitchen-review.jpg" alt="">
-                        </li>
-                    </ul>
-                </li>
+          <ul>
+            <li>
+              <img src="/img/content/living_room-review.jpg" alt="">
+            </li>
+            <li>
+              <img src="/img/content/kitchen-review.jpg" alt="">
+            </li>
+          </ul>
+        </li>
 
-                <li>
-                    <blockquote>
+        <li>
+          <blockquote>
 
-                    </blockquote>
-                    <img alt="">
-                    <img alt="">
-                </li>
-            </ul>
-        </article>
+          </blockquote>
+          <img alt="">
+          <img alt="">
+        </li>
+      </ul>
+    </article>
+    <div class="wrap">
+      <section class="request" id="request">
+        <h2 class="title">Оставить заявку</h2>
 
-        <section id="#submitt">
-            <h2>Оставить заявку</h2>
+        <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
 
-            <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <p>
+            <label for=""></label>
+            <input type="text" id="" placeholder="Ваше имя">
+          </p>
 
-            <form action="https://echo.htmlacademy.ru/courses" method="get">
-                <p>
-                    <label for=""></label>
-                    <input type="text" id="" placeholder="Ваше имя">
-                </p>
+          <p>
+            <label for=""></label>
+            <input type="tel" id="" placeholder="Введите телефон">
+          </p>
+        </form>
 
-                <p>
-                    <label for=""></label>
-                    <input type="tel" id="" placeholder="Введите телефон">
-                </p>
-            </form>
+        <button class="btn" type="button">Оставить заявку</button>
+      </section>
+    </div>
+  </main>
 
-            <button type="button">Оставить заявку</button>
-        </section>
-    </main>
-
-    <footer>
-        <a href="tel:+79818574624">+7 (981) 857-46-24</a>
-        <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-        <p>ИП Королёва А.А.</p>
-    </footer>
+  <footer>
+    <a class="contact-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
+    <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+    <p>ИП Королёва А.А.</p>
+  </footer>
 </body>
 
 </html>
