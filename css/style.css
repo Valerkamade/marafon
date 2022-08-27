@@ -121,13 +121,14 @@
 }
 
 .link:hover {
-  color: var(--button);
+  /* color: var(--button); */
+  text-shadow: 0 0 10px var(--hover);
 }
 
 .link:active,
 .link:focus {
-  background-color: var(--basic);
-  color: var(--accent-light);
+  /* background-color: var(--basic); */
+  color: var(--button);
   outline-color: var(--white);
 }
 
@@ -338,12 +339,13 @@
 } */
 
 .link-more:hover path {
-  fill: var(--button);
+  /* fill: var(--button);*/
+  text-shadow: 0 0 10px var(--hover);
 }
 
 .link-more:active path,
 .link-more:focus path {
-  fill: var(--accent-light);
+  fill: var(--button);
 }
 
 .portfolio-item:hover .desc-hover {
