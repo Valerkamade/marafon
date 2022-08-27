@@ -32,7 +32,6 @@
 }
 
 .page-body {
-  /* position: relative; */
   min-width: 1440px;
   min-height: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -95,13 +94,14 @@
   padding-top: 36px;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 91px;
-  height: 25px;
+  margin-bottom: 86px;
+
 }
 
 .link-logo img {
   width: 91px;
   height: auto;
+  margin: auto 0;
 }
 
 .site-navigation {
@@ -118,7 +118,17 @@
 .main-navigation a {
   color: var(--basic);
   text-decoration: none;
+}
 
+.link:hover {
+  color: var(--button);
+}
+
+.link:active,
+.link:focus {
+  background-color: var(--basic);
+  color: var(--accent-light);
+  outline-color: var(--white);
 }
 
 .contact-phone {
@@ -151,7 +161,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 233px;
-  padding-left: 82px;
+  padding-left: 84px;
   width: 500px;
 
 }
@@ -160,15 +170,16 @@
   font-size: 50px;
   line-height: 62px;
   text-transform: none;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .bunner-disc p {
   margin: 0;
-  margin-bottom: 21px
+  margin-bottom: 25px;
 }
 
 .btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -177,23 +188,39 @@
   background-color: var(--button);
   border: none;
   padding: 25px 66px 24px 68px;
+  cursor: pointer;
+  outline-color: var(--white);
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 20px var(--hover);
+}
+
+.btn:active,
+.btn:focus {
+  background-color: var(--basic);
+  color: var(--button);
 }
 
 /* About us */
+
+.about-us {
+  height: 576px;
+}
 
 .desc {
   position: relative;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 500px;
+  padding-left: 509px;
   width: 528px;
   margin-bottom: 156px;
-  margin-left: 80px;
+  margin-left: 82px;
 }
 
 .desc p {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .desc::before {
@@ -203,7 +230,6 @@
   background-repeat: no-repeat;
   left: 0px;
   top: 0px;
-  /* padding: 25px; */
   width: 100%;
   height: 465px;
 }
@@ -254,24 +280,40 @@
   margin-bottom: 30px;
 }
 
-.portfolio-list li {
+.portfolio-item {
+  position: relative;
   height: 451px;
   width: auto;
   margin-bottom: 10px;
 }
 
 .desc-hover {
+  position: absolute;
+  display: none;
   color: var(--basic-white);
   background-color: var(--hover);
+  width: 100%;
+  height: 100%;
+
 }
 
 .desc-title {
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
+  padding: 0;
+  margin: 0;
+  margin-top: 86px;
+  margin-bottom: 19px;
+  text-align: center;
 }
 
-.more {
+.desc-hover p {
+  padding: 0 35px;
+  margin: 0;
+}
+
+.link-more {
   position: relative;
   display: block;
   font-weight: 500;
@@ -279,12 +321,11 @@
   line-height: 37px;
   text-decoration: none;
   color: var(--basic);
-  /* padding-right: 70px; */
   margin: 0 auto;
   width: 294px;
 }
 
-.more::after {
+/* .link-more::after {
   position: absolute;
   content: "";
   right: 0;
@@ -294,6 +335,20 @@
   background-position: 50%;
   width: 60px;
   height: 37px;
+} */
+
+.link-more:hover path {
+  fill: var(--button);
+}
+
+.link-more:active path,
+.link-more:focus path {
+  fill: var(--accent-light);
+}
+
+.portfolio-item:hover .desc-hover {
+  display: block;
+
 }
 
 /* Team */
@@ -306,12 +361,13 @@
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 38px;
   list-style: none;
   margin: 0;
   padding: 0;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .team-item img {
@@ -327,8 +383,13 @@
 
 /* Procedure */
 
+.procedure h2 {
+  padding-left: 45px;
+}
+
 .procedure-list {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   list-style: none;
   gap: 20px;
@@ -339,10 +400,33 @@
 
 .procedure-list li {
   width: 285px;
-  padding-top: 90px;
+  counter-increment: list-counter;
+}
+
+.procedure-list li::before {
+  display: flex;
+  content: counter(list-counter);
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--basic-white);
+  background-color: var(--accent-dark);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
 }
 
 /* Reviews */
+
+.reviews {
+  position: relative;
+}
+
+.reviews h2 {
+  padding-left: 20px;
+}
 
 .reviews-list {
   list-style: none;
@@ -388,25 +472,52 @@
   font-style: normal;
 }
 
+.arrow {
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-color: var(--button);
+  font-size: 0;
+  border-radius: 50%;
+  background-image: url("../img/icon/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  top: 50%;
+  margin-left: 82px;
+  outline-color: var(--white);
+}
+
+.arrow-right {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  right: 0;
+  margin-right: 82px;
+}
+
+.arrow:hover {
+  box-shadow: 0px 0px 20px var(--hover);
+}
+
+.arrow:active,
+.arrow:focus {
+  background-color: var(--basic);
+}
+
 /* Request */
 
 .request {
-  /* position: relative; */
   width: 508px;
-  height: 590px;
+  height: 624px;
   background-image: url("../img/dicoration/map.png");
   background-repeat: no-repeat;
   background-position: right 0;
   background-size: 590px 624px;
-  padding-left: 80px;
+  padding-left: 82px;
   padding-right: 611px;
 }
 
-/* .request::after {
-  position: absolute;
-} */
-
 .title-request {
+  padding-top: 50px;
   margin-bottom: 24px;
 }
 
@@ -417,6 +528,27 @@
 
 .request p {
   color: var(--white-60);
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.request-item {
+  width: 508px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--basic-white);
+  font: inherit;
+  margin-bottom: 31px;
+  margin-top: 4px;
+  outline-color: white;
+  color: var(--white);
+}
+
+.request-item::placeholder {
+  color: var(--white);
 }
 
 /* Footer */
@@ -424,7 +556,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 37px;
+  padding-top: 36px;
   padding-bottom: 37px;
 }
 
@@ -441,4 +573,9 @@
 
 .footer p:last-child {
   margin-left: auto;
+}
+
+.contact-phone-footer {
+  font-size: 18px;
+  line-height: 30px;
 }
