@@ -1,3 +1,3 @@
-# Личный проект [«Scandi»](https://valerkamade.github.io/marafon/)
+# Личный проект [«Scandi»](https://scandi.valerkamade.ru)
 
 * Студент: [Valerkamade](https://github.com/Valerkamade).
